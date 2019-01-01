@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+<title>Eastland - Members</title>
+    <link href="bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="Style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <!--navbar-->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+          <div class="contentBoxL"> 	
+            <a class="icon" href="homepage.html"> 		
+            <img src="css/images/east.jpg" /></a>
+          </div>
+        
+          <!--this is where the collapsable nav goes-->
+          <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          
+        <div class="collapse navbar-collapse navHeaderCollapse">
+            <ul class="nav navbar-nav navbar-right">
+               <li><a href="homepage.html">Home</a></li>
+                <li class="active"><a href="members.html">Members</a></li>
+               <!--dropdown menu here-->
+                <li class="dropdown">
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Facilities <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="gym.html">Gym</a></li>
+                        <li><a href="pool.html">Pool</a></li>
+                        <li><a href="hall.html">Sports Hall</a></li>
+                        <li><a href="turf.html">Astro Turf</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#contact" data-toggle="modal">Message Us</a></li>
+            </ul>    
+        </div>   
+      </div> 
+    </div>    
+   
+    <div class="container">
+     <div class="col-lg-7">
+         <h1><b>Memberships</b></h1>
+         <p>We offer a wide range memberships that can be tailored to your needs and budget. We offer both full and partial memberships. Basic full memberships start from just £15.00 whilst the partial memberships start from just £5.00 with a £1.00 entry fee.</p>
+         <p>When you first sign up to a full membership you get 1 month free.</p>
+         <h3>Full Memberships</h3>
+         <p>A full membership to just one of our facilities costs only £15.00 a month. With this deal you choose the facility and also covers any classes you may take.</p>
+         <p>A full membership of multiple facilities cost only £25.00. With this deal you can choose which 2 of our facilities and have the same privileges as all other full members.</p>
+         <p>Our all-inclusive full membership costs just £45.00 and covers all of our facilities.</p>
+         <h3>Partial Membership</h3>
+         <p>A Partial membership is for just one facility and costs £5.00 plus every time you use the facility you pay £1.00.</p>
+         <p>For more information you can either use our messaging service or call 16431879196842.</p>
+     </div>
+         
+        <div class="col-lg-5">
+                        <img class="img-rounded" src="Assets/Icons/Gym.jpg" width="49%"/>
+                    
+                        <img class="img-rounded" src="Assets/Icons/hall.jpg" width="49%"/>
+                    
+                        <img class="img-rounded" src="Assets/Icons/Pitch.jpg" width="49%"/>
+                    
+                        <img class="img-rounded" src="Assets/Icons/pool.jpg" width="49%"/>
+        </div>
+    </div>
+    
+  <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+               <h3><a href="turf.html">Artificial Turf</a></h3>
+                <p>Our state of the art 5G artificial football pitches are great for a kick about. We offer reasonable rates for everyone and members can buy "Season Tickets".</p>
+                <a href="turf.html" class="btn btn-primary">Read More</a>
+            </div>
+            <div class="col-md-3">
+               <h3><a href="pool.html">Swimming Pool</a></h3>
+                <p>Our Olympic size swimming pool is perfect for a day out with the family or for a gentle workout. Sport England help subsidise the facilities so prices are always low.</p>
+                <a href="pool.html" class="btn btn-primary">Read More</a>
+            </div>
+            <div class="col-md-3">
+               <h3><a href="gym.html">Gym</a></h3>
+                <p>Our spacious gym is equipped with everything you might need for a full work. We regularly improve our gym by installing new equipment so there are always new things to try out.</p>
+                <a href="gym.html" class="btn btn-primary">Read More</a>
+            </div>
+            <div class="col-md-3">
+               <h3><a href="hall.html">Sports Hall</a></h3>
+                <p>Our 4 court sports hall is great for a wide range of activities such as badminton or futsal. We also offer our customer a chance to rent out the sports hall for children's parties.</p>
+                <a href="hall.html" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+        <p class="navbar-text pull-left">Site Built by George Storry</p>
+            <a href="#contact" data-toggle="modal" class="navbar-btn btn-danger btn pull-right">Message Us</a>
+        </div>
+    </div>
+    
+    <!--modal-->
+    <div class="modal fade" id="contact" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <!--modal form start-->
+            <form class="form-horizontal">
+                <!--modal-header-->
+                <div class="modal-header">
+                    <h4>Message Us</h4>
+                </div>
+                <!--modal body-->
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="contact-name" class="col-lg-2 control-label">Name</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="contact-name" placeholder="Full Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email" class="col-lg-2 control-label">Email</label>
+                        <div class="col-lg-10">
+                            <input type="email" class="form-control" id="contact-email" placeholder="email@email.co.uk">
+                        </div>
+                    </div>
+                     <div class="form-group">
+                        <label for="contact-msg" class="col-lg-2 control-label">Message</label>
+                        <div class="col-lg-10">
+                            <textarea class="form-control" rows="8"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <!--modal footer-->
+                <div class="modal-footer">
+                    <button class="btn btn-success" type="submit">Submit</button>
+                    <a class="btn btn-default" data-dismiss="modal">Close</a>
+                </div>
+                </form>
+                <!--modal form end-->
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

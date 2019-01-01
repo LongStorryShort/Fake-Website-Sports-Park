@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+<title>Eastland - Contact</title>
+   <link href="bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="Style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <!--navbar-->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="contentBoxL"> 	<!--This is my facebook icon I had to retrieve from my memory stick-->
+            <a class="icon" href="homepage.html"> 		
+            <img src="css/images/east.jpg" alt="facebook" /></a>
+          </div>
+          <!--this is where the collapsable nav goes-->
+          <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          
+        <div class="collapse navbar-collapse navHeaderCollapse">
+            <ul class="nav navbar-nav navbar-right">
+               <li><a href="homepage.html">Home</a></li>
+                <li><a href="members.html">Members</a></li>
+               <!--dropdown menu here-->
+                <li class="dropdown">
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Facilities <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="gym.html">Gym</a></li>
+                        <li><a href="pool.html">Pool</a></li>
+                        <li><a href="hall.html">Sports Hall</a></li>
+                        <li><a href="turf.html">Astro Turf</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+                <li><a href="#contact" data-toggle="modal">Message Us</a></li>
+            </ul>    
+        </div>   
+      </div> 
+    </div> 
+    
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <!--page Header-->
+                        <div class="page-header">
+                        <h3>Contact Information</h3>
+                        </div>
+                        <head>
+                        <style>
+                        #map-canvas {
+                        width: 500px;
+                        height: 400px;
+                        }
+                        </style>
+                      <script src="https://maps.googleapis.com/maps/api/js"></script>
+                      <script>
+                      function initialize() {
+                      var mapCanvas = document.getElementById('map-canvas');
+                      var mapOptions = {
+                      center: new google.maps.LatLng(52.63835643, -1.69140369),
+                      zoom: 17,
+                      mapTypeId: google.maps.MapTypeId.ROADMAP
+                      }
+                      var map = new google.maps.Map(mapCanvas, mapOptions)
+                      }
+                     google.maps.event.addDomListener(window, 'load', initialize);
+                    </script>
+                    </head>
+                    <body>
+                    <div id="map-canvas"></div>
+                    </body>
+
+                        <p><br></p>
+                        <p><b>Tel:</b> 16431879196842</p>
+                        <p><b>Email:</b> Eastland@leisure.co.uk</p>
+                        <p><b>Address:</b></p>
+                        <p>32 Gorilla Street</p>
+                        <p>Eastland</p>
+                        <p>E58 1HK</p>
+                        <p>Staffordshire</p>
+                        <p>England</p>
+                        <p>Contact can also contact us via <a href="https://en-gb.facebook.com"><b><u>Facebook</u></b></a> and <a href="https://twitter.com"><b><u>Twitter</u></b></a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--footer-->
+    <div class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+        <p class="navbar-text pull-left">Site Built by George Storry</p>
+            <a href="#contact" data-toggle="modal" class="navbar-btn btn-danger btn pull-right">Message Us</a>
+        </div>
+    </div>
+
+    
+    <!--modal-->
+    <div class="modal fade" id="contact" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <!--modal form start-->
+            <form class="form-horizontal">
+                <!--modal-header-->
+                <div class="modal-header">
+                    <h4>Message Us</h4>
+                </div>
+                <!--modal body-->
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="contact-name" class="col-lg-2 control-label">Name</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="contact-name" placeholder="Full Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email" class="col-lg-2 control-label">Email</label>
+                        <div class="col-lg-10">
+                            <input type="email" class="form-control" id="contact-email" placeholder="email@email.co.uk">
+                        </div>
+                    </div>
+                     <div class="form-group">
+                        <label for="contact-msg" class="col-lg-2 control-label">Message</label>
+                        <div class="col-lg-10">
+                            <textarea class="form-control" rows="8"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <!--modal footer-->
+                <div class="modal-footer">
+                    <button class="btn btn-success" type="submit">Submit</button>
+                    <a class="btn btn-default" data-dismiss="modal">Close</a>
+                </div>
+                </form>
+                <!--modal form end-->
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
